@@ -1,0 +1,36 @@
+#imports
+import time
+#start
+def start():
+    print("Hungry Teenager Skipping School For Some Cake")
+    print("Old Guy Boutta Break His Hip For Some Cake")
+    print("Cute Dog Tryna Get Some Cake")
+    print("Press T Key for Teenager, O for Old Man, and D for Dog")
+    time.sleep(4)
+start()
+#chose your character
+choosecharacter = input('Choose a character')
+#pick a character
+  #Hungry Teenager
+if choosecharacter == "T":
+    print("Hi, I'm hungry. Let's go get some cake b. After we can pull up to school.")
+    time.sleep(2)
+    print("Lets go to this really nice cake place on 14th street.")
+    time.sleep(2)
+    ask = input('Which train should I take? The 4/2/Q or D?')
+    if ask == "4":
+        print ("Alright, lets go left on Broadway and walk a few block to the A")
+  #Old Man
+elif choosecharacter == "O":
+    print("Hi, I'm the old man that wants to buy some cake!")
+    print("Since I'm old with bad hips and I get tired easily, lets go to the nearest bakery.")
+    time.sleep(2)
+    print("Lets take the bus right there its coming. Lets hope I can make it.")
+
+  #Dog
+elif choosecharacter == "D":
+    print("WOOF WOOF. I")
+  #a mistake
+else:
+    print("Error, try again!")
+    start()
